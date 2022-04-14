@@ -14,6 +14,7 @@ class CustomImageRow extends StatelessWidget {
         const SizedBox(
           width: 10,
         ),
+
         Container(
           height: 60,
           width: 60,
