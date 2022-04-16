@@ -1,6 +1,8 @@
+
 import 'package:flutter/material.dart';
-import 'package:flutter_screens/screen1/config/front_end_config.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../../../../config/app_data.dart';
+
 
 
 class TextIconRow extends StatelessWidget {
@@ -10,10 +12,10 @@ class TextIconRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Row(
-      mainAxisAlignment: MainAxisAlignment.start,
+
       children: [
         const Icon(
-          FontAwesomeIcons.check,
+          Icons.check,
           color:  Color(0xff5996e9),
           size: 13,
         ),
@@ -22,11 +24,11 @@ class TextIconRow extends StatelessWidget {
           width: 8,
         ),
 
-        Text(text,style: const TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.bold,
-            color: FrontEndConfigs.kAppBaseColor
-        ),),
+        Text(text, style: TextStyle(
+          fontSize: 14,
+          fontWeight: FontWeight.bold,
+          color: AppData.defaultColors.cobalt),
+        ),
       ],
     );
   }
