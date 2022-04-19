@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_screens/orders/orders_page.dart';
 import 'package:flutter_screens/view_orders/income_orders_page.dart';
 
 void main() {
@@ -14,17 +15,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
 
-      localizationsDelegates: [
+      localizationsDelegates: const [
         GlobalCupertinoLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
 
-      supportedLocales: [
+      supportedLocales: const [
         Locale("fa", "IR"),
       ],
 
-      locale: Locale("fa", "IR"),
+      locale: const Locale("fa", "IR"),
 
 
       title: 'Flutter Demo',
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: IncomeOrderPage(),
+        body: OrdersPage(),
       ),
     );
   }

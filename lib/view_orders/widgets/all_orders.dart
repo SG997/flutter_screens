@@ -55,11 +55,11 @@ class _AllOrders extends State<AllOrders> {
                       borderRadius: BorderRadius.circular(5)),
                   // TODO change to image loaded from network
                   child: Image.asset('assets/images/barcode2.png', color: Colors.white,)),
-              SizedBox(width: 20,),
+              const SizedBox(width: 20,),
             ],
           ),
 
-          SizedBox(height: 20,),
+          const SizedBox(height: 20,),
 
           Text('הזמנות פעילות', style: AppFonts.heeboMedium.withParams(
               fontSize: 14.0, color: AppData.defaultColors.accent),

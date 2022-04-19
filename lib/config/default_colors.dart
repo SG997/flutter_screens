@@ -2,7 +2,21 @@ import 'package:flutter/material.dart';
 
 class DefaultAppColors {
   final Color transparent = Color(0x00000000);
-
+  static const kbuttonGradientColor = LinearGradient(
+    colors: [
+      Color(0xff2494fd),
+      Color(0xff2571F3),
+      Color(0xff2D49E6),
+      Color(0xff3022DA),
+    ],
+  );
+  static const kbgGradientColor = LinearGradient(
+      begin: Alignment.topLeft,
+      end: Alignment.centerRight,
+      colors: [
+        Color(0xffF8FFFA),
+        Color(0xffE9F7FE),
+      ]);
   final Color darkWhite = Color(0xFFBDBDBD);
   final Color white = Color(0xFFf8f8f8);
   final Color whiteTen = Color(0xFFe6e6e6);

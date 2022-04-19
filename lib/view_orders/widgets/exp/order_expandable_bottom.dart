@@ -21,8 +21,8 @@ class _OrderExpandableBottom extends State<OrderExpandableBottom> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 10),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.symmetric(horizontal: 10),
+      decoration: const BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.only(bottomLeft: Radius.circular(15), bottomRight: Radius.circular(15)),
       ),
@@ -32,21 +32,21 @@ class _OrderExpandableBottom extends State<OrderExpandableBottom> {
         crossAxisAlignment: CrossAxisAlignment.end,
 
         children: [
-          CustomImageRow(),
+          const CustomImageRow(),
 
-          SizedBox(height: 10,),
+          const SizedBox(height: 10,),
 
           TextIconRow('6 מוצרים'),
 
-          SizedBox(height: 8,),
+          const SizedBox(height: 8,),
 
           TextIconRow('שולם 340₪'),
 
-          SizedBox(height: 8,),
+          const SizedBox(height: 8,),
 
           TextIconRow('משלוח עד הבית'),
 
-          SizedBox(height: 20,),
+          const SizedBox(height: 20,),
 
           Align(
             alignment: Alignment.topRight,
