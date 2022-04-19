@@ -6,31 +6,31 @@ class Utils{
         imageUrl: 'assets/images/chair.jpg',
         headLine: 'של אחו',
         secondHeadLine: '50  כלשהיא מטעמי',
-        amount: 'שייך, דין',
+        amount: ' שייך, דין',
         areaNumber: 'מד אחר. גד 2:'),
     OrderRowData(
         imageUrl: 'assets/images/chair.jpg',
         headLine: 'של אחו',
         secondHeadLine: '50  כלשהיא מטעמי',
-        amount: 'שייך, דין',
+        amount: ' שייך, דין',
         areaNumber: 'מד אחר. גד 2:'),
     OrderRowData(
         imageUrl: 'assets/images/chair.jpg',
         headLine: 'של אחו',
         secondHeadLine: '50  כלשהיא מטעמי',
-        amount: 'שייך, דין',
+        amount: ' שייך, דין',
         areaNumber: 'מד אחר. גד 2:'),
     OrderRowData(
         imageUrl: 'assets/images/chair.jpg',
         headLine: 'של אחו',
         secondHeadLine: '50  כלשהיא מטעמי',
-        amount: 'שייך, דין',
+        amount: ' שייך, דין',
         areaNumber: 'מד אחר. גד 2:'),
     OrderRowData(
         imageUrl: 'assets/images/chair.jpg',
         headLine: 'של אחו',
         secondHeadLine: '50  כלשהיא מטעמי',
-        amount: 'שייך, דין',
+        amount: ' שייך, דין',
         areaNumber: 'מד אחר. גד 2:'),
   ];
 }

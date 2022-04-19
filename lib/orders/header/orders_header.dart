@@ -13,7 +13,7 @@ class _Orders_header extends State<OrdersHeader> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(18.0),
+      padding: const EdgeInsets.all(22.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -29,7 +29,7 @@ class _Orders_header extends State<OrdersHeader> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'שש 6 מספר מוצר',
+                '  שש 6 מספר מוצר ',
                 style: AppFonts.heeboNormal.copyWith(
                   color: AppData.defaultColors.cobaltFour,
                   fontSize: 16.0,
