@@ -27,7 +27,7 @@ class _OrderRowState extends State<OrderRow> {
       padding: const EdgeInsets.symmetric(horizontal: 19.0,vertical: 0),
       child: Column(
         children: [
-          SizedBox(height: 2,),
+          const SizedBox(height: 8,),
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(
@@ -113,8 +113,8 @@ class _OrderRowState extends State<OrderRow> {
               )
             ],
           ),
-          SizedBox(height: 2,),
-          Divider()
+          const SizedBox(height: 2,),
+          const Divider()
         ],
       ),
     );
