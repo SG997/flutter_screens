@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screens/orders/orders_page.dart';
-import 'package:flutter_screens/view_orders/income_orders_page.dart';
+import 'package:flutter_screens/providers/counter_container_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (context) => CounterStateProvider())
+  ], child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -14,24 +17,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
       localizationsDelegates: const [
         GlobalCupertinoLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
-
       supportedLocales: const [
         Locale("fa", "IR"),
       ],
-
       locale: const Locale("fa", "IR"),
-
-
       title: 'Flutter Demo',
-
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
@@ -40,4 +36,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

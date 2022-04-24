@@ -6,8 +6,6 @@ import 'package:flutter_screens/orders/header/appbar_header.dart';
 import 'package:flutter_screens/orders/header/orders_header.dart';
 
 class OrdersPage extends StatefulWidget {
-  const OrdersPage({Key? key}) : super(key: key);
-
   @override
   State<StatefulWidget> createState() {
     return _OrdersPage();
