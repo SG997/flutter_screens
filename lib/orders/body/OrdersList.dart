@@ -40,9 +40,12 @@ class _OrdersList extends State<OrdersList> {
                 print(getCounterIndex());
                 print(getIndex());
                 if (details.delta.dx > 0) {
+                  print("left");
+                  print("Blue widget called");
                   setCounterIndex(-1);
                   setIndex(i);
                 } else {
+                  print("COunter");
                   setIndex(-1);
                   setCounterIndex(i);
                 }
