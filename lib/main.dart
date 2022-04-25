@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screens/orders/orders_page.dart';
 import 'package:flutter_screens/providers/counter_container_provider.dart';
+import 'package:flutter_screens/screen3/screen3_view.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -30,8 +31,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        body: OrdersPage(),
+      home:  Scaffold(
+        body: Screen3(),
       ),
     );
   }
