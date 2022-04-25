@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screens/config/app_data.dart';
 import 'package:flutter_screens/config/app_fonts.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class EndBodyView extends StatelessWidget {
   const EndBodyView({Key? key}) : super(key: key);
@@ -31,12 +30,9 @@ class EndBodyView extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      const Icon(
-                        FontAwesomeIcons.ccMastercard,
-                        size: 12,
-                      ),
+                       Image.asset('assets/images/master.png',height: 25,width: 30,),
                       const SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Text(
                         'כרטיס מאסטר 6768',
@@ -45,31 +41,31 @@ class EndBodyView extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(height: 10,),
+                  const SizedBox(height: 10,),
                   _getRow(
                     'כּוֹתֶרֶת',
                     '1996',
-                    AppFonts.assistantMedium.copyWith(
+                    AppFonts.assistantNormal.copyWith(
                         fontSize: 16, color: AppData.defaultColors.blue),
                   ),
-                  SizedBox(height: 5,),
+                  const SizedBox(height: 5,),
                   _getRow(
                     'עוזר מדיום',
                     '200',
-                    AppFonts.assistantMedium.copyWith(
+                    AppFonts.assistantNormal.copyWith(
                         fontSize: 16, color: AppData.defaultColors.blue),
                   ),
-                  SizedBox(height: 5,),
+                  const SizedBox(height: 5,),
                   _getRow(
                     'שלום שם',
-                    '2,0090',
+                    '2,0090₪',
                     AppFonts.assistantBold.copyWith(
                         fontSize: 16, color: AppData.defaultColors.blue),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 25,),
+            const SizedBox(height: 35,),
           ],
         ),
       ),
